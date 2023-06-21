@@ -17,18 +17,8 @@ async function runScript() {
    const searchInput = await driver.findElement(By.id('searchInput'),10000);
 
    await searchInput.sendKeys('GDPR', Key.ENTER);
-
-   // Encontrar el segundo artículo y hacer clic en él
-  // await driver.findElement(By.css('#st-nav-results-container > a:nth-child(2)'),10000).click();
    
-
-  
-
-
-    
-
-   
-    await driver.sleep(5000)
+   await driver.sleep(5000)
   } finally {
    await driver.quit();
   }
